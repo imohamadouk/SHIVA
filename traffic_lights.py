@@ -17,14 +17,14 @@ import sys
 #Network Setting
 import socket
 
-hote = "192.168.0.101"
+hote = "192.168.0.101" # To change, eventually
 port = 12800
 
 connexion_avec_serveur = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-print("------cnx faite ")
+
 connexion_avec_serveur.connect((hote, port))
 
-print("Connexion etablie avec le serveur sur le port {}".format(port))
+print("Connexion established on the port {}".format(port))
 
     
 
@@ -53,14 +53,14 @@ print "Traffic Light Simulation. Press CTRL + C to quit"
 # Main loop
 try:
     while RUNNING:
-        # Green for 8 seconds
+        # Green for 10 seconds
         trafficState(0,0,1)
         connexion_avec_serveur.send("vert")
         time.sleep(10)
         # Yellow for 3 seconds
         trafficState(0,1,0)
         time.sleep(3)
-        # Red for 8 seconds
+        # Red for 6 seconds
         trafficState(1,0,0)
         connexion_avec_serveur.send("rouge")
         time.sleep(6)

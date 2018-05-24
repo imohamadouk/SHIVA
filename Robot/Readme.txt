@@ -1,0 +1,1 @@
+Avant de pouvoir lancer tous ces scripts, il est important d'avoir au préalable réaliser les opérations se trouvant sur ce site : http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#pc-setup

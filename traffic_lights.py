@@ -4,7 +4,7 @@
 #
 #  traffic_light_LED.py
 #
-# Make 3 LEDs simulate an American street light
+# Make 3 LEDs simulate traffic lights
 #
 #
  
